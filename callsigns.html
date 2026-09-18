@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Callsigns | NSW Police Force</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- =========================================
+         NAVIGATION
+    ========================================== -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="brand">
+
+                <div class="brand-logo">
+
+                    <img
+                        src="assets/nswpf-logo.png"
+                        alt="NSW Police Force Logo"
+                    >
+
+                </div>
+
+                <div class="brand-text">
+
+                    <strong>NEW SOUTH WALES</strong>
+
+                    <span>POLICE FORCE</span>
+
+                    <small>SYDNEY ROLEPLAY</small>
+
+                </div>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="divisions.html">
+                    Divisions
+                </a>
+
+                <a href="callsigns.html" class="active">
+                    Callsigns
+                </a>
+
+            </nav>
+
+
+            <button
+                class="mobile-menu"
+                onclick="toggleMenu()"
+                aria-label="Open navigation menu"
+            >
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================
+         PAGE HEADER
+    ========================================== -->
+
+    <main>
+
+        <section class="page-header">
+
+            <div>
+
+                <span>
+                    NSW POLICE FORCE
+                </span>
+
+                <h1>
+                    Department Callsigns
+                </h1>
+
+                <p>
+                    View the current NSWPF callsign allocations
+                    within Sydney Roleplay.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CALLSIGNS
+        ========================================== -->
+
+        <section class="section">
+
+            <div class="callsign-top">
+
+                <div>
+
+                    <span class="small-label">
+                        CURRENT ALLOCATION
+                    </span>
+
+                    <h2>
+                        Callsign Register
+                    </h2>
+
+                </div>
+
+                <div class="live-status">
+
+                    <span></span>
+
+                    LIVE REGISTER
+
+                </div>
+
+            </div>
+
+
+            <!-- SEARCH / FILTER -->
+
+            <div class="callsign-controls">
+
+                <div class="search-box">
+
+                    <span>
+                        ⌕
+                    </span>
+
+                    <input
+                        type="text"
+                        id="callsignSearch"
+                        placeholder="Search callsigns, roles or officers..."
+                    >
+
+                </div>
+
+
+                <select id="divisionFilter">
+
+                    <option value="all">
+                        All Roles
+                    </option>
+
+                    <option value="Commissioner">
+                        Commissioner
+                    </option>
+
+                    <option value="Deputy Commissioner">
+                        Deputy Commissioner
+                    </option>
+
+                    <option value="Assistant Commissioner">
+                        Assistant Commissioner
+                    </option>
+
+                    <option value="Sydney City">
+                        Sydney City
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- =====================================
+                 CALLSIGN TABLE
+            ====================================== -->
+
+            <div class="table-wrapper">
+
+                <table class="callsign-table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                CALLSIGN
+                            </th>
+
+                            <th>
+                                ROLE
+                            </th>
+
+                            <th>
+                                ASSIGNED TO
+                            </th>
+
+                            <th>
+                                STATUS
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="callsignTable">
+
+                        <!-- JavaScript adds callsigns here -->
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+
+            <!-- NO RESULTS -->
+
+            <div
+                id="noResults"
+                class="no-results"
+                style="display: none;"
+            >
+
+                <strong>
+                    No callsigns found
+                </strong>
+
+                <p>
+                    Try changing your search or filter.
+                </p>
+
+            </div>
+
+
+            <!-- =====================================
+                 NOTICE
+            ====================================== -->
+
+            <div class="notice">
+
+                <div class="notice-icon">
+                    !
+                </div>
+
+                <div>
+
+                    <strong>
+                        Important
+                    </strong>
+
+                    <p>
+                        Callsigns may change in the future.
+                        This register should be considered
+                        a live departmental allocation.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             INFORMATION
+        ========================================== -->
+
+        <section class="cta-section">
+
+            <div class="cta-box">
+
+                <span>
+                    SYDNEY ROLEPLAY
+                </span>
+
+                <h2>
+                    NSWPF Callsign Register
+                </h2>
+
+                <p>
+                    The callsign register contains the current
+                    Commissioner, Deputy Commissioner, Assistant
+                    Commissioner and Sydney City allocations.
+                </p>
+
+                <a
+                    href="divisions.html"
+                    class="button primary"
+                >
+                    View Divisions
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div>
+
+                <strong>
+                    NSW POLICE FORCE
+                </strong>
+
+                <p>
+                    Sydney Roleplay Department
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="divisions.html">
+                    Divisions
+                </a>
+
+                <a href="callsigns.html">
+                    Callsigns
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Sydney Roleplay
+            </span>
+
+            <span>
+                ROLEPLAY • NOT AFFILIATED WITH THE NSW GOVERNMENT
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
