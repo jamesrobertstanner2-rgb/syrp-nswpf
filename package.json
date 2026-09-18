@@ -1,10 +1,5 @@
 {
   "name": "nswpf-sydney-roleplay",
   "version": "1.0.0",
-  "description": "NSW Police Force department website for Sydney Roleplay",
-  "private": true,
-  "scripts": {
-    "dev": "serve .",
-    "start": "serve ."
-  }
+  "description": "NSW Police Force department website for Sydney Roleplay"
 }
